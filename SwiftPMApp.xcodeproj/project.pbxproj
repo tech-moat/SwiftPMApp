@@ -13,6 +13,8 @@
 		9662611928BD088C00B98914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9662611728BD088C00B98914 /* Main.storyboard */; };
 		9662611B28BD088F00B98914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9662611A28BD088F00B98914 /* Assets.xcassets */; };
 		9662611E28BD088F00B98914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9662611C28BD088F00B98914 /* LaunchScreen.storyboard */; };
+		9662612628BD0AAF00B98914 /* 1170x2532-Wallpaper-436.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9662612528BD0AAF00B98914 /* 1170x2532-Wallpaper-436.jpeg */; };
+		9662612928BD0E9C00B98914 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 9662612828BD0E9C00B98914 /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		9662611A28BD088F00B98914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9662611D28BD088F00B98914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9662611F28BD088F00B98914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9662612528BD0AAF00B98914 /* 1170x2532-Wallpaper-436.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1170x2532-Wallpaper-436.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9662612928BD0E9C00B98914 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,7 @@
 			children = (
 				9662611128BD088C00B98914 /* AppDelegate.swift */,
 				9662611328BD088C00B98914 /* SceneDelegate.swift */,
+				9662612528BD0AAF00B98914 /* 1170x2532-Wallpaper-436.jpeg */,
 				9662611528BD088C00B98914 /* ViewController.swift */,
 				9662611728BD088C00B98914 /* Main.storyboard */,
 				9662611A28BD088F00B98914 /* Assets.xcassets */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SwiftPMApp;
+			packageProductDependencies = (
+				9662612828BD0E9C00B98914 /* PKHUD */,
+			);
 			productName = SwiftPMApp;
 			productReference = 9662610E28BD088B00B98914 /* SwiftPMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 9662610528BD088B00B98914;
+			packageReferences = (
+				9662612728BD0E9C00B98914 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 9662610F28BD088B00B98914 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9662612628BD0AAF00B98914 /* 1170x2532-Wallpaper-436.jpeg in Resources */,
 				9662611E28BD088F00B98914 /* LaunchScreen.storyboard in Resources */,
 				9662611B28BD088F00B98914 /* Assets.xcassets in Resources */,
 				9662611928BD088C00B98914 /* Main.storyboard in Resources */,
@@ -356,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9662612728BD0E9C00B98914 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9662612828BD0E9C00B98914 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9662612728BD0E9C00B98914 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9662610628BD088B00B98914 /* Project object */;
 }
